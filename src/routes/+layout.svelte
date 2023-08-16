@@ -14,7 +14,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase">Diego McDonald</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
@@ -46,4 +46,13 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+	<svelte:fragment slot="pageFooter">
+		<!-- page footer that contains links to my GitHub and LinkedIn -->
+		<div class="flex flex-col items-center justify-center py-4 text-sm text-gray-500">
+			<div class="flex items-center justify-center space-x-2">
+				<a href="#">LinkedIn</a>
+				<a href="#">GitHub</a>
+			</div>
+		</div>	
+	</svelte:fragment>
 </AppShell>
